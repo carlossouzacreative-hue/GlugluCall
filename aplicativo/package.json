@@ -1,0 +1,72 @@
+{
+  "name": "glugluchamadas-convidado",
+  "productName": "GlugluCall",
+  "version": "1.0.0",
+  "description": "Cliente do GlugluCall: abre direto a sala do gluglutelas.website",
+  "main": "main.js",
+  "author": "Gluglutelas",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis",
+    "dist:dir": "electron-builder --win --dir"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "resedit": "^3.1.0"
+  },
+  "build": {
+    "appId": "website.gluglutelas.call",
+    "productName": "GlugluCall",
+    "copyright": "Gluglutelas",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "offline.html",
+      "package.json",
+      ".env",
+      "build/icon.png",
+      "build/icon.ico"
+    ],
+    "asarUnpack": [
+      "build/icon.ico",
+      "build/icon.png"
+    ],
+    "artifactName": "${productName}-Setup-${version}.exe",
+    "afterPack": "build/afterPack.js",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "GlugluCall",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

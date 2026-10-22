@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/
+GlugluCall-dados/
+*.log
+.env
+*.zip
+.DS_Store
+Thumbs.db
