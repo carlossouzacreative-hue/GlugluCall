@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">GluGlu Calls — ícone roxo gamer</title>
+  <desc id="desc">Um G fofo em roxo com headset e detalhes sutis de neon sobre fundo escuro.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17102B"/>
+      <stop offset="1" stop-color="#090817"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#C4A0FF"/>
+      <stop offset=".48" stop-color="#9860FF"/>
+      <stop offset="1" stop-color="#7040E8"/>
+    </linearGradient>
+    <linearGradient id="earcup" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B98BFF"/>
+      <stop offset="1" stop-color="#6232D4"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#05030D" flood-opacity=".55"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo arredondado para funcionar bem como ícone de aplicativo -->
+  <rect x="12" y="12" width="488" height="488" rx="112" fill="url(#bg)"/>
+  <rect x="13.5" y="13.5" width="485" height="485" rx="110.5" fill="none" stroke="#A46BFF" stroke-opacity=".45" stroke-width="3"/>
+  <circle cx="256" cy="256" r="171" fill="#8D4EFF" opacity=".08" filter="url(#glow)"/>
+
+  <!-- Arco do headset -->
+  <path d="M142 254 V222 C142 151 193 103 256 103 C319 103 370 151 370 222 V254"
+        fill="none" stroke="#7B43EE" stroke-width="25" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M142 254 V222 C142 151 193 103 256 103 C319 103 370 151 370 222 V254"
+        fill="none" stroke="#D6B9FF" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Orelhas do headset -->
+  <g filter="url(#softShadow)">
+    <rect x="119" y="214" width="57" height="112" rx="27" fill="url(#earcup)" stroke="#D2B5FF" stroke-opacity=".65" stroke-width="3"/>
+    <rect x="336" y="214" width="57" height="112" rx="27" fill="url(#earcup)" stroke="#D2B5FF" stroke-opacity=".65" stroke-width="3"/>
+    <rect x="132" y="230" width="12" height="80" rx="6" fill="#E5D4FF" opacity=".72"/>
+    <rect x="368" y="230" width="12" height="80" rx="6" fill="#E5D4FF" opacity=".72"/>
+  </g>
+
+  <!-- Mascote em forma de G -->
+  <path d="M333 193
+           C313 166 284 151 251 151
+           C192 151 151 194 151 255
+           C151 315 193 359 251 359
+           C302 359 340 327 350 280
+           L350 263
+           L265 263
+           C251 263 241 273 241 287
+           C241 301 251 311 265 311
+           L294 311
+           C283 324 268 330 250 330
+           C211 330 184 300 184 256
+           C184 212 212 181 251 181
+           C273 181 292 191 305 207
+           Z"
+        fill="url(#purple)" stroke="#D7BCFF" stroke-width="3" stroke-linejoin="round" filter="url(#softShadow)"/>
+
+  <!-- Expressão amigável -->
+  <ellipse cx="220" cy="236" rx="9" ry="14" fill="#29134F"/>
+  <ellipse cx="282" cy="229" rx="9" ry="14" fill="#29134F"/>
+  <path d="M198 213 Q209 199 224 197" fill="none" stroke="#F0E5FF" stroke-width="8" stroke-linecap="round" opacity=".85"/>
+  <path d="M202 252 l-7 7" fill="none" stroke="#E9D9FF" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Microfone discreto -->
+  <path d="M374 304 C374 338 352 357 325 359" fill="none" stroke="#8C54F8" stroke-width="13" stroke-linecap="round"/>
+  <path d="M374 304 C374 338 352 357 325 359" fill="none" stroke="#D8BCFF" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
+  <rect x="302" y="345" width="54" height="25" rx="12.5" transform="rotate(-10 329 357.5)" fill="#7540E4" stroke="#C9A7FF" stroke-width="2"/>
+
+  <!-- Pequenos acentos neon, sem poluir -->
+  <path d="M392 155 l7 -13 M405 164 l13 -6" stroke="#C99AFF" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="112" cy="173" r="4" fill="#B98BFF" filter="url(#glow)"/>
+  <circle cx="398" cy="373" r="3" fill="#E0C8FF" filter="url(#glow)"/>
+</svg>
